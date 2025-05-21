@@ -1,6 +1,6 @@
 import { User, CurrentUser as Host, Message } from "./types";
 
-const ChatHistory: Message = {
+const ChatHistory = {
   u1: [
     {
       id: "u1",

@@ -3,7 +3,8 @@ import { User } from "./../common/types";
 import { clipText } from "../common/utils";
 
 interface PropType extends User {
-  onClick: () => {};
+  isSelected: boolean;
+  onClick: () => any;
 }
 const UserCard = (props: PropType) => {
   const {

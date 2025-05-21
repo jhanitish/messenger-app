@@ -2,7 +2,8 @@ import React from "react";
 import { Message as MessageType } from "../common/types";
 
 interface PropType extends MessageType {
-  isOnline: boolean;
+  isOnline?: boolean;
+  image: string;
 }
 const Message = (props: PropType) => {
   const {

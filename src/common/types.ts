@@ -3,7 +3,7 @@ export interface Message {
   name: string;
   text: string;
   timestamp: string;
-  isUser: boolean;
+  isUser?: boolean;
 }
 
 export interface LastMessage {

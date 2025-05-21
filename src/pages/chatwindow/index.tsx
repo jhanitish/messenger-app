@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { ChatContext } from "../../context/chatContext";
 import Message from "../../components/message";
-import { Message as MessageType } from "../../types";
+import { Message as MessageType } from "../../common/types";
 import "./style.css";
 
 const ChatWindow = () => {
@@ -13,6 +13,8 @@ const ChatWindow = () => {
   useEffect(() => {
     if (selectedUser?.id && chatHistory[selectedUser.id]) {
       setChats(chatHistory[selectedUser.id]);
+    } else {
+      setChats([]);
     }
   }, [selectedUser, chatHistory]);
 
