@@ -1,0 +1,74 @@
+.messageList {
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.userCard {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  background-color: #fff;
+  box-shadow: 4px 0 0 #fff inset;
+  padding: 10px 5px;
+  &.isSelected {
+    background-color: #edf3f8;
+    box-shadow: 4px 0 0#01754f inset;
+  }
+}
+
+.image {
+  position: relative;
+
+  span {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid green;
+    background-color: #fff;
+    bottom: 8px;
+    right: 0;
+    &.online {
+      background-color: green;
+    }
+  }
+}
+
+.thumbnail {
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-clip: content-box;
+  background-size: cover;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  border-bottom: 1px solid rgb(140 140 140 / 0.2);
+}
+
+.data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.name {
+  width: 70px;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.msg {
+  color: rgba(0, 0, 0, 0.6);
+}

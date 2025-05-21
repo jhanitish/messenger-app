@@ -1,0 +1,120 @@
+.chatWindow {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  border-bottom: 1px solid #ccc;
+}
+.headname {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.messages {
+  flex: 6;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+
+.textbox {
+  flex: 2;
+  padding: 10px;
+}
+
+.textbox textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  padding: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.actionBtn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.actionBtn button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/***
+Message box
+***/
+
+.messageCard {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  box-shadow: 4px 0 0 #fff inset;
+  padding: 10px 5px;
+}
+
+.msg_img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-clip: content-box;
+  background-size: cover;
+}
+
+.msg_detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.msg_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.msg_name {
+  /* width: 70px;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important; */
+}
+
+.msg_txt {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.active {
+  span {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid green;
+    margin-right: 5px;
+
+    &.online {
+      background-color: green;
+    }
+  }
+}
